@@ -1,0 +1,77 @@
+/* Header.css */
+#header {
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+}
+#header .navbar {
+  padding: 0;
+  justify-content: space-between;
+  background: none !important;
+}
+#header .navbar-brand {
+  color: mediumblue;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: auto;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+#header .navbar-collapse {
+  flex-grow: 0;
+}
+#header .navbar-collapse .navbar-nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+#header .navbar-collapse a {
+  color: #4d4d4d;
+  position: relative;
+}
+#header .navbar-collapse a:hover,
+#header .navbar-collapse a.active {
+  background: none;
+  color: #f64b4b;
+}
+#header .navbar-collapse a:before {
+  content: "";
+  background: #f64b4b;
+  height: 1px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  right: 100%;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+#header .navbar-collapse a:hover:before,
+#header .navbar-collapse a.active:before {
+  right: 7px;
+  left: 8px;
+  opacity: 1;
+}
+
+/* Responsive header rules from App.css for small screens */
+@media only screen and (max-width: 1023px) {
+  #header {
+    padding: 10px 0;
+  }
+  #header .navbar-collapse .navbar-nav {
+    float: none;
+  }
+  #header .navbar-collapse .nav-item {
+    float: none;
+    display: block;
+    padding: 7px 0;
+  }
+}

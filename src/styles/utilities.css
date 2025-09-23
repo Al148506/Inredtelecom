@@ -1,0 +1,68 @@
+/* utilities.css — botones, inputs, socials, go-top, pagination */
+.btn.btn-primary {
+  background: #f64b4b;
+  border-color: #f64b4b;
+  padding: 13px 35px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+.btn.btn-primary:focus, .btn.btn-primary:hover {
+  background: #fff;
+  border-color: #f64b4b;
+  color: #f64b4b;
+}
+.btn.btn-primary .fas { margin-left: 6px; font-size: 15px; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], textarea {
+  background: #fff;
+  border: 1px solid #cccccc;
+  margin: 0;
+  padding: 5px 15px;
+  width: 100%;
+  height: 47px;
+  color: gray;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+textarea { height: 150px !important; min-height: 150px !important; resize: vertical; padding: 10px 15px !important; }
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { color: gray; }
+
+/* Other placeholder/vendor rules omitted for brevity — keep if needed */
+
+.socials { display: table; height: 100%; width: 100%; }
+.socials ul { display: table-cell; vertical-align: middle; text-align: center; }
+.socials li { display: inline-block; vertical-align: top; padding: 0 5px; }
+.socials a {
+  width: 35px; height: 35px; background: #fff; color: #f64b4b; border-radius: 50%;
+  display: block; text-align: center; padding: 2px; transition: background 0.3s linear, color 0.3s linear;
+}
+.socials a:hover { background: #f64b4b; color: #fff; }
+.socials .fab { line-height: 2; }
+
+.go-top {
+  width: 50px; height: 50px; overflow: hidden; text-indent: 101%; white-space: nowrap;
+  transition: all 0.3s linear; position: fixed; bottom: 20px; right: 20px;
+  background: #f64b4b; border-radius: 3px; color: #fff; border: 0;
+}
+.go-top:before {
+  width: 13px; height: 13px; transform: rotate(-45deg); content: ""; border-style: solid;
+  border-color: #fff; border-width: 1px 1px 0 0; position: absolute; top: 50%; left: 50%;
+  margin: -3px 0 0 -6px;
+}
+.go-top:hover { background: #f41a1a; }
+
+.pagination > li.active a { background: #f64b4b; border-color: #f64b4b; }
+.pagination > li.active a:hover { background: #f64b4b; border-color: #f64b4b; }
+.pagination > li > a {
+  color: #f64b4b; transition: all 0.3s linear; padding: 6px 15px 12px;
+}
+.pagination > li > a:hover { background: #f64b4b; color: #fff; border-color: #f64b4b; }

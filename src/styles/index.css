@@ -1,0 +1,73 @@
+/* index.css — Reset y tipografía (extraído de App.css) */
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+img { max-width: 100%; height: auto; vertical-align: top; }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: inherit;
+}
+
+h1 { font-size: 46px; }
+h2 { font-size: 30px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+
+p { margin: 0 0 15px; }
+
+a { color: #f64b4b; text-decoration: none; transition: color 0.3s ease; }
+a:hover, a:focus { text-decoration: none; color: #f41a1a; }
+
+ul, .teams-block .image .overlay, .contact-block .contact-info ul {
+  margin: 0; padding: 0; list-style: none;
+}
+
+.ellipsis { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+#wrapper { overflow: hidden; width: 100%; position: relative; }
+
+.container-fluid { margin: 0 auto; max-width: 1200px; }
+
+.content-block ul { margin: 0 0 15px; }
+.content-block ul li { position: relative; padding: 0 0 0 20px; }
+.content-block ul li:before {
+  content: "\f101"; font-family: "fontawesome"; position: absolute; top: 0; left: 0;
+  transition: all 0.3s linear;
+}
+.content-block ul li a { color: #333; }
+.content-block ul li a:hover { color: #f64b4b; }
+
+/* Responsive font-size tweaks from App.css */
+@media only screen and (max-width: 1023px) {
+  body { font-size: 15px; line-height: 24px; }
+  h1 { font-size: 34px; margin: 0 0 15px; }
+  h2 { font-size: 26px; margin: 0 0 15px; }
+}
+@media only screen and (max-width: 767px) {
+  h2 { font-size: 20px; }
+  h3 { font-size: 20px; }
+  .title-holder { margin: 0 0 20px; }
+}

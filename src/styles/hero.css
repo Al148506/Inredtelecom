@@ -1,0 +1,67 @@
+/* Hero.css */
+.pagetitle {
+  margin: 80px 0 0;
+  background: #f64b4b;
+  color: #fff;
+  padding: 50px 0;
+}
+.pagetitle .title-holder {
+  margin: 0;
+}
+.pagetitle .subtitle {
+  color: #e6e6e6;
+}
+
+.block {
+  padding: 60px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.hero-block {
+  margin: 0;
+  width: 100vw;
+  /*height: 100vh; /* ocupa toda la ventana, header sobre la imagen */
+  position: relative;
+  overflow: hidden;
+}
+.hero-block .carousel-item:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hero-block .carousel-item img {
+  max-height: 600px; /* ajusta el valor que quieras */
+  width: 100%;
+  object-fit: cover; /* recorta la imagen si es más alta */
+}
+.hero-block .carousel-caption {
+  left: 25%;
+  right: 25%;
+  transform: translateY(50%);
+  bottom: 50%;
+}
+.hero-block p {
+  margin: 0 0 30px;
+}
+
+/* Responsive tweaks */
+@media only screen and (max-width: 1023px) {
+  .hero-block .carousel-caption {
+    left: 7%;
+    right: 7%;
+  }
+  .hero-block p {
+    margin: 0 0 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-block .carousel-caption {
+    display: none;
+  }
+  .hero-block .carousel-control {
+    width: 15%;
+  }
+}
