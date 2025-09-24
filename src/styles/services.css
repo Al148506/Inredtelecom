@@ -1,49 +1,215 @@
-/* Services.css */
+/* Services.css - tema claro fijo */
+
+/* Contenedor general */
+.services-block {
+  padding: 72px 0;
+  background: linear-gradient(180deg, #fafafa 0%, #f4f6f8 100%);
+}
+
+/* Título de sección */
+.services-block .section-title {
+  margin-bottom: 28px;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+  text-align: center;
+}
+
+.services-block .section-subtitle {
+  margin: 0 auto 44px;
+  max-width: 720px;
+  font-size: 16px;
+  color: #475569;
+  text-align: center;
+}
+
+/* Grid */
+.services-block .row {
+  margin-left: -12px;
+  margin-right: -12px;
+  row-gap: 24px;
+}
+
+/* Card */
+.services-block .holder {
+  position: relative;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  border-radius: 14px;
+  padding: 22px 20px;
+  box-shadow: 0 1px 1px rgba(2, 6, 23, 0.02), 0 4px 10px rgba(2, 6, 23, 0.04);
+  transition: transform 220ms ease, box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.services-block .holder:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.08), 0 2px 6px rgba(2, 6, 23, 0.04);
+  border-color: rgba(2, 6, 23, 0.1);
+}
+
+/* Icono circular */
 .services-block .icon {
   width: 60px;
   height: 60px;
-  font-size: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
   color: #f64b4b;
-  margin: 0 0 20px;
-  display: inline-block;
-  vertical-align: middle;
+  background: rgba(246, 75, 75, 0.08);
   border-radius: 50%;
-  text-align: center;
-  transition: all 0.3s linear;
-}
-.services-block .icon .fas {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 2;
-}
-.services-block .row {
-  margin: 0 -15px 50px;
-}
-.services-block .row:last-child {
-  margin: 0 -15px;
-}
-.services-block .holder {
-  transition: all 0.3s linear;
-}
-.services-block .holder:hover {
-  margin-top: -5px;
-}
-.services-block .holder:hover .icon {
-  box-shadow: inset 0 0 0 30px #f64b4b;
-  color: #fff;
-  font-size: 18px;
+  margin: 2px 0 14px;
+  transition: background-color 220ms ease, color 220ms ease,
+    transform 220ms ease;
 }
 
-/* small screen adjustments */
-@media only screen and (max-width: 767px) {
+.services-block .holder:hover .icon {
+  color: #fff;
+  background: #f64b4b;
+  transform: scale(1.04);
+}
+
+/* Título del servicio */
+.services-block .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.2px;
+  margin: 4px 0 8px;
+}
+
+/* Descripción */
+.services-block .description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* Accesibilidad: enfoque visible para teclado */
+.services-block .holder:focus-within,
+.services-block .holder:focus {
+  outline: 2px solid #f64b4b;
+  outline-offset: 3px;
+}
+
+/* Responsivo */
+@media (max-width: 991.98px) {
   .services-block {
-    padding: 40px 0 25px;
+    padding: 56px 0;
   }
-  .services-block .row {
-    margin-bottom: 0;
+  .services-block .title {
+    font-size: 17px;
   }
-  .services-block .holder:hover {
-    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .services-block {
+    padding: 44px 0 32px;
+  }
+  .services-block .section-title {
+    font-size: 24px;
+  }
+  .services-block .holder {
+    padding: 18px 16px;
+  }
+}
+
+/* Utilidades de padding para columnas */
+.services-block .col {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+/* Alturas iguales en grid */
+.services-block .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* hace que todas las columnas se estiren a la misma altura */
+}
+
+/* Asegura que la columna ocupe 100% de la altura de la fila */
+.services-block .col {
+  display: flex;
+}
+
+/* La card llena la altura de su columna */
+.services-block .holder {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Mantener el contenido consistente dentro de la card */
+.services-block .icon {
+  flex: 0 0 auto;
+}
+
+.services-block .title {
+  flex: 0 0 auto;
+}
+
+.services-block .description {
+  margin-top: 4px;
+  flex: 1 1 auto; /* ocupa el espacio restante para alinear el fondo */
+  display: block;
+}
+
+/* Encabezado de sección */
+.title-holder {
+  text-align: center;
+  margin: 0 auto 36px;
+  max-width: 880px;
+  padding: 0 16px;
+}
+
+.title-holder h2 {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 4.2vw, 36px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #0f172a; /* azul grisáceo oscuro para alta legibilidad */
+}
+
+/* Subtítulo descriptivo */
+.title-holder .subtitle {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.7;
+  color: #475569; /* slate-600 */
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Acento sutil bajo el título */
+.title-holder .accent {
+  width: 72px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff8a8a 0%, #f64b4b 100%);
+  margin: 14px auto 0;
+  opacity: 0.9;
+}
+
+/* Variante compacta opcional (si la sección necesita menos altura) */
+.title-holder.title-holder--compact {
+  margin-bottom: 24px;
+}
+.title-holder.title-holder--compact h2 {
+  margin-bottom: 6px;
+}
+.title-holder.title-holder--compact .accent {
+  margin-top: 10px;
+  height: 3px;
+  width: 60px;
+}
+
+/* Responsivo fino */
+@media (max-width: 767.98px) {
+  .title-holder {
+    margin-bottom: 28px;
   }
 }
