@@ -6,9 +6,12 @@ import AppHero from "./components/hero";
 import AppAbout from "./components/about";
 import AppServices from "./components/services";
 import AppWorks from "./components/works";
+import Testimonials from "./components/testimonials";
+import Contact from "./components/contact";
+import AppFooter from "./components/footer";
 function App() {
   return (
-    <>
+    <div className="App">
       <header id="header">
         <AppHeader />
       </header>
@@ -17,8 +20,11 @@ function App() {
         <AppAbout />
         <AppServices />
         <AppWorks />
+        <Testimonials />
+        <Contact />
+        <AppFooter />
       </main>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,269 @@
+/* testimonials.css */
+
+.testimonials-section {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.testimonials-header h2 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+.testimonials-header .subtitle {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* Carousel item wrapper to center card */
+.carousel-card-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 40px;
+}
+
+/* Card */
+.testimonial-card {
+  max-width: 900px;
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(249, 250, 252, 0.98)
+  );
+}
+
+/* Top row: logo + meta */
+.testimonial-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.logo-wrapper img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #eef0f2;
+  padding: 6px;
+}
+
+.logo-placeholder {
+  width: 68px;
+  height: 68px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f64b4b, #007bff);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 18px rgba(246, 75, 75, 0.08);
+}
+
+.testimonial-meta .person {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #1f2d3d;
+  font-weight: 600;
+}
+
+.role-company {
+  color: #6c757d;
+  font-size: 0.88rem;
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sep {
+  opacity: 0.5;
+}
+
+/* The recommendation text */
+.testimonial-text {
+  margin: 12px 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #36454f;
+  font-style: normal;
+}
+
+/* Footer */
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.testimonial-footer .date {
+  color: #9aa4ad;
+}
+
+.rating {
+  color: #f5a623;
+  font-size: 1.05rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .testimonial-card {
+    padding: 18px;
+  }
+  .logo-wrapper img,
+  .logo-placeholder {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    padding: 22px 28px;
+  }
+}
+
+/* Recommendation card (below each testimonial) */
+.recommendation-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(250, 250, 251, 0.95)
+  );
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
+.rec-thumb-wrapper {
+  width: 88px;
+  height: 64px;
+  flex: 0 0 88px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rec-thumb-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rec-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 12px;
+}
+
+.rec-title {
+  font-size: 0.95rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.rec-actions {
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .recommendation-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .rec-thumb-wrapper {
+    width: 100%;
+    height: 160px;
+    flex: none;
+  }
+  .rec-meta {
+    width: 100%;
+  }
+  .rec-actions a,
+  .rec-actions button {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+/* Fuerza que los controles siempre se muestren y con estilo grande */
+.testimonials-carousel .carousel-control-prev,
+.testimonials-carousel .carousel-control-next {
+  width: 60px;
+  opacity: 1; /* evitar que desaparezcan al hover */
+  transition: opacity 0.18s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  z-index: 50;
+}
+
+/* Oculta el default background icon para que no se mezcle */
+.testimonials-carousel .carousel-control-prev-icon,
+.testimonials-carousel .carousel-control-next-icon {
+  display: none;
+}
+
+/* Estilo para los iconos personalizados (centro vertical ya por parent) */
+.carousel-control-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+}
+
+/* separaciones laterales (ajusta) */
+.testimonials-carousel .carousel-control-prev {
+  left: 10px;
+}
+.testimonials-carousel .carousel-control-next {
+  right: 10px;
+}
+
+/* aumenta el icono en pantallas pequeñas si quieres */
+@media (max-width: 576px) {
+  .carousel-control-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+  .testimonials-carousel .carousel-control-prev {
+    left: 6px;
+  }
+  .testimonials-carousel .carousel-control-next {
+    right: 6px;
+  }
+}
