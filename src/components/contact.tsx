@@ -21,6 +21,32 @@ export const ContactWithMap: React.FC = () => {
           </h1>
           <p className="subtitle">Atención Ing. David Castro</p>
 
+          <h2 className="cta-heading">¿Listo para mejorar tu comunicación?</h2>
+          <p className="cta-subtitle">
+            Contáctanos hoy y recibe atención personalizada para tu empresa o
+            proyecto.
+          </p>
+
+          <div className="cta-buttons">
+            <a
+              href="https://wa.me/524491108665?text=Hola%20quiero%20más%20información"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button whatsapp"
+            >
+              <i className="fab fa-whatsapp"></i>
+              WhatsApp
+            </a>
+
+            <a
+              href="mailto:inredtelecom@gmail.com?subject=Solicitud%20de%20información"
+              className="cta-button email"
+            >
+              <i className="fa-solid fa-envelope"></i>
+              Email
+            </a>
+          </div>
+
           <ul className="info">
             <li>
               <span className="icon">{/* <IconLocation/> */}</span>
@@ -28,7 +54,7 @@ export const ContactWithMap: React.FC = () => {
                 <div className="label">Dirección</div>
                 <div className="value">Calle Mesa De La Virgen 102</div>
                 <div className="value">
-                  León de los Aldama, Guanajuato, Mexico
+                  León de los Aldama, Guanajuato, México
                 </div>
               </div>
             </li>
@@ -53,7 +79,7 @@ export const ContactWithMap: React.FC = () => {
             <li>
               <span className="icon">{/* <IconMail/> */}</span>
               <div>
-                <div className="label">E‑mail</div>
+                <div className="label">E-mail</div>
                 <a className="value link" href="mailto:inredtelecom@gmail.com">
                   inredtelecom@gmail.com
                 </a>

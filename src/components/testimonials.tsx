@@ -89,7 +89,7 @@ const defaultTestimonials: Testimonial[] = [
   },
 ];
 
-export default function TestimonialsWithRec({
+export default function AppTestimonials({
   testimonials = defaultTestimonials,
   interval = 7000,
   indicators = true,
@@ -121,8 +121,9 @@ export default function TestimonialsWithRec({
     >
       <Container>
         <div className="testimonials-header">
-          <h2>Testimonios</h2>
+          <h2 className="title">Testimonios</h2>
           <p className="subtitle">Lo que dicen nuestros clientes</p>
+          <div className="accent" aria-hidden="true" />
         </div>
 
         <Carousel

@@ -5,6 +5,9 @@
   gap: 18px;
   align-items: start; /* fija ambos en la parte superior */
   padding: 16px;
+  padding: 50px;
+  background-color: #1e3a8a; /* azul fuerte */
+  color: #ffffff;
 }
 @media (min-width: 900px) {
   /* responsive con breakpoint */
@@ -128,4 +131,41 @@
   color: #64748b;
   font-size: 0.9rem;
   margin: 0;
+}
+
+.cta-heading {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a; /* azul de acento */
+}
+
+.cta-subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: #444;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1d49c2;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px; /* pill style */
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.cta-button:hover {
+  background-color: #21ac4f; /* mismo verde para consistencia */
+  color: #fff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

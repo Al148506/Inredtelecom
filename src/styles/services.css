@@ -3,7 +3,7 @@
 /* Contenedor general */
 .services-block {
   padding: 72px 0;
-  background: linear-gradient(180deg, #fafafa 0%, #f4f6f8 100%);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 /* Título de sección */
@@ -19,7 +19,7 @@
 .services-block .section-subtitle {
   margin: 0 auto 44px;
   max-width: 720px;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #475569;
   text-align: center;
 }
@@ -182,11 +182,12 @@
   color: #475569; /* slate-600 */
   max-width: 720px;
   margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 /* Acento sutil bajo el título */
 .title-holder .accent {
-  width: 72px;
+  width: 200px;
   height: 4px;
   border-radius: 999px;
   background: linear-gradient(90deg, #ff8a8a 0%, #f64b4b 100%);

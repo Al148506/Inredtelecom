@@ -41,7 +41,7 @@ import img24 from "../assets/images/InstalacioneEmpresariales/rack3.webp";
 import img25 from "../assets/images/VentaProductos/cable.webp";
 import img26 from "../assets/images/VentaProductos/camara.webp";
 import img27 from "../assets/images/VentaProductos/contenedor.webp";
-import img28 from "../assets/images/VentaProductos/fierros.webp";;
+import img28 from "../assets/images/VentaProductos/fierros.webp";
 import img29 from "../assets/images/VentaProductos/laptop.webp";
 import img30 from "../assets/images/VentaProductos/pararrayos.webp";
 import img31 from "../assets/images/VentaProductos/rack.webp";
@@ -52,25 +52,25 @@ const pagesData = [
   {
     id: 1,
     subtitle:
-      "Instalaciones de Antenas, Torres, Paneles Solares, Pararrayos, Tierras Físicas, Cableados, Rotulación e Identificación",
+      "Instalaciones de antenas, torres, paneles solares, pararrayos, tierras físicas, cableados, rotulación e identificación",
     images: [img1, img2, img3, img4, img5, img6, img7, img8],
   },
   {
     id: 2,
     subtitle:
-      "Mantenimientos a Equipo de Cómputo, CCTV y Organización de Cableado de RED VOZ/DATOS y FIBRA ÓPTICA en RACK y GABINETES",
+      "Mantenimientos a equipo de cómputo, CCTV y organización de cableado de red voz/datos y fibra óptica en rack y gabinetes",
     images: [img9, img10, img11, img12, img13, img14, img15, img16],
   },
   {
     id: 3,
     subtitle:
-      "Instalaciones Empresariales en Redes, Voz, Datos, Enlaces Inalámbricos y Conectividad WiFi en Oficinas",
+      "Instalaciones empresariales en redes, voz, datos, enlaces inalámbricos y conectividad wifi en oficinas",
     images: [img17, img18, img19, img20, img21, img22, img23, img24],
   },
   {
     id: 4,
     subtitle:
-      "Venta De Productos, Accesorios, Torres, Antenas y Demas Suministros En General",
+      "Venta de productos, accesorios, torres, antenas y demás suministros en general",
     images: [img25, img26, img27, img28, img29, img30, img31, img32],
   },
 ];
@@ -117,11 +117,12 @@ function AppWorks(): JSX.Element {
     <section id="works" className="block works-block">
       <Container fluid>
         <div className="title-holder">
-          <h2>Galería de nuestros trabajos</h2>
+          <h2>Nuestros trabajos</h2>
         </div>
 
         <div className="page-subtitle-wrapper">
           <h4 className="page-subtitle">{page.subtitle}</h4>
+          <div className="accent" aria-hidden="true" />
         </div>
 
         <Row className="portfoliolist">
