@@ -15,7 +15,7 @@ export default function AppHeader() {
     };
 
     // Debounce para mejor performance
-    let debounceTimer: NodeJS.Timeout;
+    let debounceTimer: ReturnType<typeof setTimeout>;
     
     const handleSectionChange = () => {
       clearTimeout(debounceTimer);
@@ -32,7 +32,6 @@ export default function AppHeader() {
         }
 
         // Configuración con hysteresis para evitar parpadeos
-        const SECTION_THRESHOLD = 200; // Píxeles mínimos para cambiar de sección
         
         let bestSection = activeSection; // Mantener sección actual por defecto
         let bestScore = -Infinity;
