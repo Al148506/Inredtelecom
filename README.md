@@ -1,69 +1,137 @@
-# React + TypeScript + Vite
+# Inred Telecom – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page corporativa desarrollada para **Inred Telecom**, diseñada para presentar los servicios de la empresa, mostrar trabajos realizados y facilitar el contacto con clientes potenciales.
 
-Currently, two official plugins are available:
+La aplicación está construida con **React, Vite y TypeScript**, priorizando rendimiento, estructura modular y una experiencia de usuario moderna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Demo en línea:**
+https://inredtelecom.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🚀 Características
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+La página incluye las siguientes secciones principales:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Inicio (Hero Section)**
+  Presentación clara de la empresa y llamada a la acción.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **Servicios**
+  Descripción de los servicios ofrecidos por la empresa.
+
+* **Galería de proyectos**
+  Muestra visual de trabajos realizados.
+
+* **Testimonios de clientes**
+  Opiniones y experiencias de clientes.
+
+* **Formulario de contacto**
+  Permite a los usuarios enviar mensajes directamente.
+
+* **Información de contacto**
+  Datos para comunicación directa con la empresa.
+
+---
+
+# 🛠 Tecnologías utilizadas
+
+* **React**
+* **TypeScript**
+* **Vite**
+* **CSS**
+* **Vercel** (deploy)
+
+Estas herramientas permiten un desarrollo rápido, tipado seguro y una aplicación optimizada para producción.
+
+---
+
+# 📦 Instalación y uso
+
+Si deseas ejecutar el proyecto localmente:
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Al148506/Inredtelecom.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Entrar al proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd Inredtelecom
 ```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Ejecutar el proyecto
+
+```bash
+npm run dev
+```
+
+El proyecto se abrirá en:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🧱 Estructura del proyecto
+
+Una estructura simplificada del proyecto:
+
+```
+src
+ ├── components
+ ├── sections
+ ├── assets
+ ├── styles
+ ├── App.tsx
+ └── main.tsx
+```
+
+* **components** → Componentes reutilizables
+* **sections** → Secciones principales de la landing
+* **assets** → Imágenes y recursos
+* **styles** → Estilos globales
+
+---
+
+# 🌐 Deploy
+
+La aplicación está desplegada en **Vercel**, lo que permite:
+
+* Deploy continuo desde GitHub
+* Optimización automática
+* CDN global
+
+---
+
+# 📸 Vista previa
+
+Puedes ver la página en funcionamiento aquí:
+
+👉 https://inredtelecom.vercel.app/
+
+---
+
+# 👨‍💻 Autor
+
+**Alejandro Castañeda**
+
+Full-Stack Developer enfocado en el desarrollo de aplicaciones web modernas con **React, TypeScript y .NET**.
+
+* GitHub: https://github.com/Al148506
+* LinkedIn: (agregar enlace)
+
+---
+
+# 📄 Licencia
+
+Este proyecto fue desarrollado como parte de un proyecto web para una empresa.
+El código se comparte únicamente con fines demostrativos dentro del portafolio del desarrollador.
