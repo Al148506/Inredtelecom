@@ -1,6 +1,6 @@
-# Inred Telecom – Landing Page
+# Inredtelecom – Landing Page
 
-Landing page corporativa desarrollada para **Inred Telecom**, diseñada para presentar los servicios de la empresa, mostrar trabajos realizados y facilitar el contacto con clientes potenciales.
+Landing page corporativa desarrollada para **Inredtelecom**, diseñada para presentar los servicios de la empresa, mostrar trabajos realizados y facilitar el contacto con clientes potenciales.
 
 La aplicación está construida con **React, Vite y TypeScript**, priorizando rendimiento, estructura modular y una experiencia de usuario moderna.
 
